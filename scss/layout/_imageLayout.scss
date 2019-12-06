@@ -1,0 +1,31 @@
+.image_layout1 {
+    display: flex;
+
+}
+
+.hotel_img img {
+    width: 500px;
+}
+
+.hotel_img2 img {
+    width: 300px;
+}
+
+.image_layout2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_layout2  img {
+    width: 314px;
+}
+
+.image_layout3  img {
+    width: 310px;
+    height: 450px;
+}
+
+.image_layout {
+    display: flex;
+    padding-top: 50px;
+}

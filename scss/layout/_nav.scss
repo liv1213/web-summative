@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+}
+
+
+
+.nav p {
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav a {
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    text-decoration: none;
+    padding: 0px 30px;
+}
+
+.nav a:hover{
+    color: rgb(61, 60, 60);
+    cursor: pointer;
+}
+
+.nav_links{
+   padding-left: 900px;
+   padding-top: 20px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+}

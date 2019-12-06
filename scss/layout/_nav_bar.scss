@@ -1,0 +1,42 @@
+.nav_bar {
+    background-color:#9abc38;
+    margin: 0px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+.nav_bar a {
+    color: rgb(87, 85, 85);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.category_search {
+    padding-left: 100px;
+}
+
+.nav_bar_links {
+    padding-left: 580px;
+   
+}
+
+.nav_bar_links a {
+    padding: 0px 20px;
+}
+
+#search_box input {
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+

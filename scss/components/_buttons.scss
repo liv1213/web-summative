@@ -1,0 +1,35 @@
+.screen_link p {
+   color: white;
+  background-color: #9abc38;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  margin: 60px 150px 0px 150px;
+  padding: 5px 0px 5px 0px ;
+}
+.screen_link p:hover {
+    background-color: #71882d;
+}
+
+.screen_link  {
+    text-decoration: none;
+   
+}
+
+.screen_change {
+    text-decoration: none;
+}
+
+.screen_change p {
+    color: white;
+   background-color: #9abc38;
+   font-family: 'Roboto', sans-serif;
+   text-align: center;
+   border-radius: 5px;
+   padding: 5px 0px 5px 0px ;
+ }
+
+
+ .screen_change p:hover {
+    background-color: #71882d;
+}

@@ -1,0 +1,26 @@
+.category_list {
+    display: flex;
+    justify-content:  center;
+    
+}
+
+.category_item {
+    margin: 20px 60px 20px 60px;
+   
+}
+
+.category_item p:hover {
+    cursor: pointer;
+    border-color: #9abc38;
+ 
+}
+
+.category_item p {
+  
+    border-radius: 20px;
+    border: solid;
+    padding: 10px 30px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(78, 77, 77);
+}
+

@@ -1,0 +1,155 @@
+{
+    "accomodation": [
+        {
+            "id": 1,
+            "featuredImage": "/image/image4.jpeg",
+            "featuredTitle": "Plaza hotel",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 1,
+            "price": "$157 NZD / night",
+            "maxGuests": 2,
+            "maxDays": 5,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                "/image/hotel.jpeg",
+                "/image/hotel.jpeg",
+                "/image/hotel.jpeg",
+                "/image/hotel.jpeg"
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "",
+                    "foodText": "tea and coffee"
+                }
+            ],
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars": ""
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": ""
+                },
+                {
+                    "location": "Service",
+                    "stars": ""
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "featuredImage": "/image/hotel.jpeg",
+            "featuredTitle": "Westend stay",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 1,
+            "price": "$157 NZD / night",
+            "maxGuests": 2,
+            "maxDays": 5
+        },
+        {
+            "id": 3,
+            "featuredImage": "/image/image5.jpeg",
+            "featuredTitle": "The George",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 1,
+            "price": "$157 NZD / night",
+            "maxGuests": 2,
+            "maxDays": 5
+        },
+        {
+            "id": 4,
+            "featuredImage": "/image/image12.jpeg",
+            "featuredTitle": "Belmont MotorInn",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 2,
+            "price": "$90 NZD / night",
+            "maxGuests": 4,
+            "maxDays": 10
+        },
+        {
+            "id": 5,
+            "featuredImage": "/image/image7.jpeg",
+            "featuredTitle": "Kings Motel",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 2,
+            "price": "$90 NZD / night",
+            "maxGuests": 4,
+            "maxDays": 10
+        },
+        {
+            "id": 6,
+            "featuredImage": "/image/image14.jpeg",
+            "featuredTitle": "Millano Motel",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 2,
+            "price": "$90 NZD / night",
+            "maxGuests": 4,
+            "maxDays": 10
+        },
+        {
+            "id": 7,
+            "featuredImage": "/image/image10.jpeg",
+            "featuredTitle": "Beachside retreat",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 3,
+            "price": "$240 NZD / night",
+            "maxGuests": 4,
+            "maxDays": 15
+        },
+        {
+            "id": 8,
+            "featuredImage": "/image/image8.jpeg",
+            "featuredTitle": "Smiths homestead",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 3,
+            "price": "$240 NZD / night",
+            "maxGuests": 4,
+            "maxDays": 15
+        },
+        {
+            "id": 9,
+            "featuredImage": "/image/image6.jpeg",
+            "featuredTitle": "Hagley backpackers",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 4,
+            "price": "$30 NZD / night",
+            "maxGuests": 1,
+            "maxDays": 10
+        },
+        {
+            "id": 10,
+            "featuredImage": "/image/image15.jpeg",
+            "featuredTitle": "YMCA",
+            "subtitle": "Harbour suite",
+            "mainInfo": "2 guests . 1 bath .  kitchen . wifi . double bed",
+            "category": 4,
+            "price": "$30 NZD / night",
+            "maxGuests": 1,
+            "maxDays": 10
+        }
+    ]
+}
