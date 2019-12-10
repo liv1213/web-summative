@@ -10,7 +10,7 @@ $(document).ready(function () {
         EL_SCREEN = $('.screen'),
         EL_CHOSEN_ITEM = $('.chosen_item'),
         EL_ACCOMODATION_CHOSEN = $('.acomodation_chosen')
-EL_USER_INPUT = $('#user_input')
+    EL_USER_INPUT = $('#user_input')
 
     let accomodationArr = [];
 
@@ -53,7 +53,7 @@ EL_USER_INPUT = $('#user_input')
             string += accomodationItemHtml(accomodation);
         });
         EL_ACCOMODATION_LIST.html(string);
-      
+
 
     }
 
@@ -72,11 +72,16 @@ EL_USER_INPUT = $('#user_input')
 
 
 
+    function displayChosenAccomodation(accomodation) {
+        let string = "";
+        $.each(accomodation, function (i, accomodation) {
+            string += accomodationChosenHtml(accomodation);
+        });
+        EL_ACCOMODATION_CHOSEN.html(string);
+        addClickListeners()
 
 
-
-
-
+    }
 
 
     function accomodationChosenHtml(accomodation) {
@@ -205,17 +210,6 @@ EL_USER_INPUT = $('#user_input')
 
 
 
-    function displayChosenAccomodation(accomodation) {
-        let string = "";
-        $.each(accomodation, function (i, accomodation) {
-            string += accomodationChosenHtml(accomodation);
-        });
-        EL_ACCOMODATION_CHOSEN.html(string);
-        addClickListeners()
-
-
-    }
-
 
 
 
@@ -223,7 +217,7 @@ EL_USER_INPUT = $('#user_input')
         $('.screen_change').on("click", function () {
             let accomodationId = $(this).data('id')
             let accomodation = getAccomodation(accomodationId);
-           
+
         });
 
     }

@@ -8,11 +8,12 @@
   box-shadow:
     inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    @include mobile {
-      box-shadow: none;
-      margin: 20px 0px 0px 0px;
-      background-color: rgba(255, 255, 255, 0.699);
-    }
+
+  @include mobile {
+    box-shadow: none;
+    margin: 20px 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.699);
+  }
 }
 
 
@@ -47,6 +48,7 @@ textarea {
   outline: none;
   border-radius: 10px;
   font-family: 'Roboto', sans-serif;
+
   @include mobile {
     background-color: white;
   }

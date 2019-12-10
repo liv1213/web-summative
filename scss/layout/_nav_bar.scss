@@ -1,5 +1,5 @@
 .nav_bar {
-    background-color:#9abc38;
+    background-color: #9abc38;
     margin: 0px;
     display: flex;
     padding-top: 30px;
@@ -24,10 +24,11 @@
 
 .nav_bar_links {
     padding-left: 580px;
+
     @include mobile {
         display: none;
     }
-   
+
 }
 
 .nav_bar_links a {
@@ -39,19 +40,21 @@
     border-radius: 20px;
     border: none;
     padding: 8px 250px 8px 8px;
-outline: none;
-@include mobile {
-    display: none;
-}
+    outline: none;
+
+    @include mobile {
+        display: none;
+    }
 }
 
-.searchbar::placeholder{
+.searchbar::placeholder {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px; 
+    font-size: 15px;
 }
 
 .category_search {
     padding-left: 100px;
+
     @include mobile {
         display: flex;
         justify-content: center;
@@ -63,11 +66,13 @@ outline: none;
     border-radius: 20px;
     border: none;
     padding: 8px 250px 8px 8px;
-outline: none;
-background-color: rgb(211, 205, 205);
+    outline: none;
+    background-color: rgb(211, 205, 205);
+
     @include desktop {
         display: none;
     }
+
     @include mobile {
         display: block;
         padding: 8px 150px 8px 8px;
