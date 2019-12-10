@@ -92,33 +92,38 @@ $(document).ready(function () {
         <h3>${accomodation.mainTitle}</h3>
         <hr>
     </div>
-    <div>`
+    <div class="detail_images">`
         $.each(accomodation.images, function (i, images) {
             chosenHtml += `  <img src= "${images.image1}">`
         })
 
 
         chosenHtml += `</div>
-      
+      <div class="detail_information">
             <p>${accomodation.info}</p>
         </div>
         
   
    
-    <div>
+    <div class="menu_header">
         <h3>${accomodation.foodTitle}</h3>
+        </div>
 
-        <div>`
+        <div class="menu_items">`
         $.each(accomodation.food, function (i, food) {
-            chosenHtml += `  <p>${food.foodText}</p>`
+            chosenHtml += `   <img src= "${food.icon}">
+            <p>${food.foodText}</p>`
         })
 
 
         chosenHtml += `</div>
-        <div>`
+        <div class="rating">`
         $.each(accomodation.rating, function (i, rating) {
             chosenHtml += `  <p>${rating.location}</p>
-            <p>${rating.stars}</p>`
+            
+            <img src= "${rating.stars}">
+            <img src= "${rating.stars2}">
+            <img src= "${rating.stars3}">`
         })
 
 
@@ -214,7 +219,7 @@ $(document).ready(function () {
 
 
     function addClickListeners() {
-        $('.screen_change').on("click", switchScreens )
+        $('.screen_change').on("click", switchScreens)
         //     let accomodationId = $(this).data('id')
         //     let accomodation = getAccomodation(accomodationId);
 

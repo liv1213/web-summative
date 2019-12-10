@@ -1,39 +1,65 @@
-.detail_header h3 {
-    font-family: 'Roboto', sans-serif;
+.acomodation_chosen{
+
+    .detail_header h3 {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .detail_information p {
+        font-family: 'Roboto', sans-serif;
+    }
 }
 
-.accomodation_item p {
-    font-family: 'Roboto', sans-serif;
+
+
+    .accomodation_details p {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .accomodation_details h3 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .accomodation_deatils2 p {
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+
+.detail_container {
+    .detail_info label {
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .detail_info1 label {
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .detail_info2 label {
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .detail_heading {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .footer_links a {
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
 }
 
-.accomodation_item h3 {
-    font-family: 'Roboto', sans-serif;
-}
 
 
 
-.detail_info label {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .detail_info1 label {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .detail_info2 label {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .detail_heading {
-    font-family: 'Roboto', sans-serif;
-  }
 
+.nav_bar a {
+        color: rgb(87, 85, 85);
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+   
 
-  .nav_bar a {
-    color: rgb(87, 85, 85);
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-}
 
 .nav p {
     color: white;
@@ -60,8 +86,4 @@
 }
 
 
-.footer_links a {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
+

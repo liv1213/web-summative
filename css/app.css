@@ -18,32 +18,46 @@
   font-size: 15px;
 }
 
-.detail_header h3 {
+.acomodation_chosen .detail_header h3 {
   font-family: 'Roboto', sans-serif;
 }
 
-.accomodation_item p {
+.acomodation_chosen .detail_information p {
   font-family: 'Roboto', sans-serif;
 }
 
-.accomodation_item h3 {
+.accomodation_details p {
   font-family: 'Roboto', sans-serif;
 }
 
-.detail_info label {
+.accomodation_details h3 {
   font-family: 'Roboto', sans-serif;
 }
 
-.detail_info1 label {
+.accomodation_deatils2 p {
   font-family: 'Roboto', sans-serif;
 }
 
-.detail_info2 label {
+.detail_container .detail_info label {
   font-family: 'Roboto', sans-serif;
 }
 
-.detail_heading {
+.detail_container .detail_info1 label {
   font-family: 'Roboto', sans-serif;
+}
+
+.detail_container .detail_info2 label {
+  font-family: 'Roboto', sans-serif;
+}
+
+.detail_container .detail_heading {
+  font-family: 'Roboto', sans-serif;
+}
+
+.detail_container .footer_links a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .nav_bar a {
@@ -77,12 +91,6 @@
   .nav_links {
     display: none;
   }
-}
-
-.footer_links a {
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  color: white;
 }
 
 .screen_link p {
@@ -156,6 +164,39 @@
   padding: 10px 30px;
   font-family: 'Roboto', sans-serif;
   color: #4e4d4d;
+}
+
+.menu_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_items img {
+  width: 100px;
+}
+
+.menu_items p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu_header h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.rating img {
+  width: 40px;
+  height: 45px;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating p {
+  font-family: 'Roboto', sans-serif;
 }
 
 .detail_container {
@@ -446,44 +487,14 @@ hr {
   }
 }
 
-.image_layout1 {
+.detail_images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.hotel_img img {
-  width: 500px;
-}
-
-.hotel_img2 img {
+.detail_images img {
   width: 300px;
-}
-
-.image_layout2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.image_layout2 img {
-  width: 314px;
-}
-
-.image_layout3 img {
-  width: 310px;
-  height: 450px;
-}
-
-.image_layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 50px;
 }
 
 .info1 {
