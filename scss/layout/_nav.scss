@@ -1,5 +1,9 @@
 .nav {
     display: flex;
+    @include mobile {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -9,6 +13,10 @@
     font-size: 30px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    @include mobile {
+        margin-top: 100px;
+        font-size: 40px;
+    }
 }
 
 .nav a {
@@ -29,4 +37,7 @@
    padding-top: 20px;
    font-family: 'Roboto', sans-serif;
    font-size: 15px;
+   @include mobile {
+       display: none;
+   }
 }

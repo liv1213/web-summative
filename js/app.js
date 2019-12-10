@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     EL_ACCOMODATION_LIST = $('.accomodation_list'),
-        EL_SEARCH_BOX = $('#search-box'),
+        EL_SEARCH_BOX = $('#searchBar'),
         EL_CATEGORY_LIST = $('.category_list'),
         EL_CATEGORY_ITEM = $('.category_item'),
         EL_SCREEN_LINK = $('.screen_link'),
@@ -13,6 +13,8 @@ $(document).ready(function () {
 
 
     let accomodationArr = [];
+
+
 
 
 
@@ -44,6 +46,7 @@ $(document).ready(function () {
 
 
 
+
     function displayAccomodation(accomodation) {
         let string = "";
         $.each(accomodation, function (i, accomodation) {
@@ -51,7 +54,6 @@ $(document).ready(function () {
         });
         EL_ACCOMODATION_LIST.html(string);
 
-        addClickListeners()
 
     }
 
@@ -69,88 +71,71 @@ $(document).ready(function () {
     }
 
 
-    function displayChosenAccomodation(accomodation) {
-        let string = "";
-        $.each(accomodation, function (i, accomodation) {
-            string += accomodationChosenHtml(accomodation);
-        });
-        EL_ACCOMODATION_CHOSEN.html(string);
 
- 
 
-    }
+
+
+
+
 
 
     function accomodationChosenHtml(accomodation) {
-        return `<div class="acomodation_chosen" data-id='${accomodation.id}'>
+        var chosenHtml =
+            `<div class="acomodation_chosen" data-id='${accomodation.id}'>
         
         <div>
         <h3>${accomodation.mainTitle}</h3>
         <hr>
     </div>
-    <div class="image_layout">
-        <div class="image_layout1">
-            <div class="hotel_img">
-                <img src="image/image9.png" alt="hotel">
-            </div>
-            <div class="hotel_img2">
-                <img src="image/image11.jpeg" alt="hotel">
-            </div>
+    <div>`
+        $.each(accomodation.images, function (i, images) {
+            chosenHtml += `  <img src= "${images.image1}">`
+        })
 
-        </div>
 
-        <div class="image_layout2">
-            <img src="image/hotel.jpeg" alt="hotel">
-            <img src="image/image13.png" alt="hotel">
+        chosenHtml += `</div>
+      
+            <p>${accomodation.info}</p>
         </div>
-        <div class="image_layout3">
-            <img src="image/image16.jpeg" alt="hotel">
-        </div>
-    </div>
+        
+  
+   
+    <div>
+        <h3>${accomodation.foodTitle}</h3>
 
-    <div class="info1">
-        <div class="info_text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="info_total">
-            <h3>$55/night</h3>
-            <p>Nov 30-Dec 21 <br>
-                1 guest</p>
-            <a href="#">EDIT</a>
-            <hr>
-            <p>55 x 5 nights $142</p>
-            <h3>Total $142</h3>
-            <a href="#">BOOK</a>
-        </div>
-    </div>
-    <hr>
-    <div class="food">
-        <h3>Food and beverage</h3>
-        <div>
-            <img src="" alt="">
-            <p>Tea and coffee</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Tea and coffee</p>
-        </div>
+        <div>`
+        $.each(accomodation.food, function (i, food) {
+            chosenHtml += `  <p>${food.foodText}</p>`
+        })
+
+
+        chosenHtml += `</div>
+        <div>`
+        $.each(accomodation.rating, function (i, rating) {
+            chosenHtml += `  <p>${rating.location}</p>
+            <p>${rating.stars}</p>`
+        })
+
+
+        chosenHtml += `</div>
+       
 
     </div>
         </div>`
+        return chosenHtml;
     }
 
 
 
     function accomodationItemHtml(accomodation) {
-        return `<div class="accomodation_item" data-id='${accomodation.id}'>
-        
+        return `
+        <hr>
+        <div class="accomodation_item" data-id='${accomodation.id}'>
+       
             <div>
             <img src="${accomodation.featuredImage}">
             </div>
+            
             <div class="accomodation_details">
                 <h3>${accomodation.featuredTitle}</h3>
                 <p>${accomodation.subtitle}</p>
@@ -169,7 +154,10 @@ $(document).ready(function () {
             </a>
          </div>
          </div>
-        </div>`
+         
+   
+        </div>
+        `
     }
 
 
@@ -217,8 +205,40 @@ $(document).ready(function () {
 
 
 
+    function displayChosenAccomodation(accomodation) {
+        let string = "";
+        $.each(accomodation, function (i, accomodation) {
+            string += accomodationChosenHtml(accomodation);
+        });
+        EL_ACCOMODATION_CHOSEN.html(string);
+        addClickListeners()
+
+
+    }
+
+
+
+
     function addClickListeners() {
-        $('.screen_change').on("click", switchScreens);
+        $('.screen_change').on("click", function () {
+            let accomodationId = $(this).data('id')
+            let accomodation = getAccomodation(accomodationId);
+            $.each(accomodation, function (i, accomodation) {
+                accomodation
+            })
+        });
+
+    }
+
+
+    function getAccomodation(accomodationId) {
+        for (var i = 0; i < accomodationArr.length; i++) {
+            var id = accomodationArr[i].id;
+            if (id === accomodationId) {
+                return accomodationArr[i];
+            }
+        }
+        return null
     }
 
 

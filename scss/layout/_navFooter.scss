@@ -1,0 +1,23 @@
+.nav_footer {
+    background-color:#9abc38;
+    @include desktop  {
+        display: none;
+    }
+    @include mobile {
+        display: block;
+        padding-bottom: 23px;
+    }
+}
+
+
+.footer_links a {
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+color: white;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-around;
+    padding-top:30px;
+}

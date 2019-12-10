@@ -4,13 +4,32 @@
         inset 0 -3em 3em rgba(0, 0, 0, 0.1),
 
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        @include mobile {
+          height: 200px;
+        }
+}
+
+.accomodation_list {
+    @include mobile {
+        margin-top: 50px;
+    }
+}
+.accomodation_item{
+margin: 50px 0px 100px 0px;    
+display: flex;
+padding-left: 60px;
+
+@include mobile {
+    display: flex;
+ flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding: 0px;
+    text-align: center;
 }
 
 
-.accomodation_item{
-margin: 50px 0px 20px 0px;    
-display: flex;
-padding-left: 60px;
+
 }
 
 .accomodation_item p {
@@ -23,14 +42,37 @@ padding-left: 60px;
 
 .accomodation_item h3 p {
     padding-left: 50px;
+    @include mobile {
+        padding: 0px;
+    }
 }
 
 .accomodation_deatils2 {
     padding-left: 250px;
     padding-top: 50px;
+    @include mobile {
+        padding: 0px;
+    }
 }
 
 .accomodation_details {
     padding-left: 100px;
     padding-top: 50px;
+    @include mobile {
+        padding: 0px;
+    }
+}
+
+.accomodation_view {
+    @include mobile {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+hr {
+    margin: 8px 30px 8px 30px;
+    @include mobile {
+        display: none;
+    }
 }
