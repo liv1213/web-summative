@@ -10,7 +10,7 @@ $(document).ready(function () {
         EL_SCREEN = $('.screen'),
         EL_CHOSEN_ITEM = $('.chosen_item'),
         EL_ACCOMODATION_CHOSEN = $('.acomodation_chosen')
-
+EL_USER_INPUT = $('#user_input')
 
     let accomodationArr = [];
 
@@ -53,7 +53,7 @@ $(document).ready(function () {
             string += accomodationItemHtml(accomodation);
         });
         EL_ACCOMODATION_LIST.html(string);
-
+      
 
     }
 
@@ -223,9 +223,7 @@ $(document).ready(function () {
         $('.screen_change').on("click", function () {
             let accomodationId = $(this).data('id')
             let accomodation = getAccomodation(accomodationId);
-            $.each(accomodation, function (i, accomodation) {
-                accomodation
-            })
+           
         });
 
     }
@@ -250,6 +248,7 @@ $(document).ready(function () {
     }
     EL_SCREEN_LINK.on('click', switchScreens);
     EL_SCREEN.slice(1).hide();
+
 
 
     init();
