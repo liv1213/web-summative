@@ -9,17 +9,7 @@
 
 
 
-.nav p {
-    color: white;
-    font-size: 30px;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
 
-    @include mobile {
-        margin-top: 100px;
-        font-size: 40px;
-    }
-}
 
 .nav a {
     color: white;
@@ -34,13 +24,3 @@
     cursor: pointer;
 }
 
-.nav_links {
-    padding-left: 900px;
-    padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-
-    @include mobile {
-        display: none;
-    }
-}

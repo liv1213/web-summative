@@ -1,3 +1,90 @@
+.searchbar::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.searchbar:-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.searchbar::-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.searchbar::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.detail_header h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.accomodation_item p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.accomodation_item h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.detail_info label {
+  font-family: 'Roboto', sans-serif;
+}
+
+.detail_info1 label {
+  font-family: 'Roboto', sans-serif;
+}
+
+.detail_info2 label {
+  font-family: 'Roboto', sans-serif;
+}
+
+.detail_heading {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav_bar a {
+  color: #575555;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.nav p {
+  color: white;
+  font-size: 30px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 420px) {
+  .nav p {
+    margin-top: 100px;
+    font-size: 40px;
+  }
+}
+
+.nav_links {
+  padding-left: 900px;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 420px) {
+  .nav_links {
+    display: none;
+  }
+}
+
+.footer_links a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
 .screen_link p {
   color: white;
   background-color: #9abc38;
@@ -141,22 +228,6 @@ textarea {
   }
 }
 
-.detail_info label {
-  font-family: 'Roboto', sans-serif;
-}
-
-.detail_info1 label {
-  font-family: 'Roboto', sans-serif;
-}
-
-.detail_info2 label {
-  font-family: 'Roboto', sans-serif;
-}
-
-.detail_heading {
-  font-family: 'Roboto', sans-serif;
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,20 +245,6 @@ textarea {
   }
 }
 
-.nav p {
-  color: white;
-  font-size: 30px;
-  margin: 0px;
-  font-family: 'Roboto', sans-serif;
-}
-
-@media (max-width: 420px) {
-  .nav p {
-    margin-top: 100px;
-    font-size: 40px;
-  }
-}
-
 .nav a {
   color: white;
   font-size: 20px;
@@ -199,19 +256,6 @@ textarea {
 .nav a:hover {
   color: #3d3c3c;
   cursor: pointer;
-}
-
-.nav_links {
-  padding-left: 900px;
-  padding-top: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-}
-
-@media (max-width: 420px) {
-  .nav_links {
-    display: none;
-  }
 }
 
 #home {
@@ -273,14 +317,6 @@ textarea {
   }
 }
 
-.accomodation_item p {
-  font-family: 'Roboto', sans-serif;
-}
-
-.accomodation_item h3 {
-  font-family: 'Roboto', sans-serif;
-}
-
 .accomodation_item h3 p {
   padding-left: 50px;
 }
@@ -340,12 +376,6 @@ hr {
   padding-bottom: 30px;
 }
 
-.nav_bar a {
-  color: #575555;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-}
-
 .nav_bar a:hover {
   cursor: pointer;
   color: white;
@@ -376,26 +406,6 @@ hr {
   .searchbar {
     display: none;
   }
-}
-
-.searchbar::-webkit-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-}
-
-.searchbar:-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-}
-
-.searchbar::-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-}
-
-.searchbar::placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
 }
 
 .category_search {

@@ -9,11 +9,7 @@
 
 
 
-.nav_bar a {
-    color: rgb(87, 85, 85);
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-}
+
 
 .nav_bar a:hover {
     cursor: pointer;
@@ -47,10 +43,7 @@
     }
 }
 
-.searchbar::placeholder {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-}
+
 
 .category_search {
     padding-left: 100px;

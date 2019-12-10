@@ -88,7 +88,7 @@ $(document).ready(function () {
         var chosenHtml =
             `<div class="acomodation_chosen" data-id='${accomodation.id}'>
         
-        <div>
+        <div class="detail_header">
         <h3>${accomodation.mainTitle}</h3>
         <hr>
     </div>
@@ -214,24 +214,24 @@ $(document).ready(function () {
 
 
     function addClickListeners() {
-        $('.screen_change').on("click", function () {
-            let accomodationId = $(this).data('id')
-            let accomodation = getAccomodation(accomodationId);
+        $('.screen_change').on("click", switchScreens )
+        //     let accomodationId = $(this).data('id')
+        //     let accomodation = getAccomodation(accomodationId);
 
-        });
+        // });
 
     }
 
 
-    function getAccomodation(accomodationId) {
-        for (var i = 0; i < accomodationArr.length; i++) {
-            var id = accomodationArr[i].id;
-            if (id === accomodationId) {
-                return accomodationArr[i];
-            }
-        }
-        return null
-    }
+    // function getAccomodation(accomodationId) {
+    //     for (var i = 0; i < accomodationArr.length; i++) {
+    //         var id = accomodationArr[i].id;
+    //         if (id === accomodationId) {
+    //             return accomodationArr[i];
+    //         }
+    //     }
+    //     return null
+    // }
 
 
     function switchScreens() {
