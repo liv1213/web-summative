@@ -1,6 +1,7 @@
 
 
 $(document).ready(function () {
+    
 
     EL_ACCOMODATION_LIST = $('.accomodation_list'),
         EL_SEARCH_BOX = $('#searchBar'),
@@ -10,13 +11,14 @@ $(document).ready(function () {
         EL_SCREEN = $('.screen'),
         EL_CHOSEN_ITEM = $('.chosen_item'),
         EL_ACCOMODATION_CHOSEN = $('.acomodation_chosen')
-    EL_USER_INPUT = $('#user_input'),
-    EL_USER_INPUT = $('#user_input1'),
-    EL_USER_INPUT = $('#user_input2'),
-    EL_INPUT_MSG = $('#input_msg'),
-    EL_INPUT_MSG = $('#input_msg1'),
-    EL_INPUT_MSG = $('#input_msg2'),
-    EL_GO = $('#go')
+        EL_USER_INPUT = $('#user_input'),
+        EL_USER_INPUT = $('#user_input1'),
+        EL_USER_INPUT = $('#user_input2'),
+        EL_INPUT_MSG = $('#input_msg'),
+        EL_INPUT_MSG = $('#input_msg1'),
+        EL_INPUT_MSG = $('#input_msg2'),
+        EL_GO = $('#go'),
+        EL_MY_FORM = $('#myform')
 
     let accomodationArr = [];
 
@@ -59,8 +61,9 @@ $(document).ready(function () {
             string += accomodationItemHtml(accomodation);
         });
         EL_ACCOMODATION_LIST.html(string);
-
-
+        addClickListeners()
+        let  EL_SCREEN_CHANGE = $('.screen_change')
+        EL_SCREEN_CHANGE.on('click', switchScreens);
     }
 
 
@@ -79,13 +82,11 @@ $(document).ready(function () {
 
 
     function displayChosenAccomodation(accomodation) {
-        let string = "";
-        $.each(accomodation, function (i, accomodation) {
-            string += accomodationChosenHtml(accomodation);
-        });
+        let string = accomodationChosenHtml(accomodation);;
+         
+            
+        
         EL_ACCOMODATION_CHOSEN.html(string);
-        addClickListeners()
-
 
     }
 
@@ -206,6 +207,9 @@ $(document).ready(function () {
         displayAccomodation(filteredAccomodation);
     }
 
+
+
+
     function addCategoryListeners() {
         $('.category_item').on('click', function () {
             let category = $(this).data('category');
@@ -226,27 +230,29 @@ $(document).ready(function () {
     }
 
 
-$('#go').on("click", function(){
-$('#input_msg').html($('#user_input').val());
-});
-
-$('#go').on("click", function(){
-    $('#input_msg1').html($('#user_input1').val());
+    $('#go').on("click", function () {
+        $('#input_msg').html($('#user_input').val());
     });
 
-    $('#go').on("click", function(){
+    $('#go').on("click", function () {
+        $('#input_msg1').html($('#user_input1').val());
+    });
+
+    $('#go').on("click", function () {
         $('#input_msg2').html($('#user_input2').val());
-        });
+    });
 
 
 
     function addClickListeners() {
-        $('.screen_change').on("click", function(){
+        $('.screen_change').on("click", function () {
             let accomodationId = $(this).data('id')
             let accomodation = getAccomodation(accomodationId);
-
+            displayChosenAccomodation(accomodation);
+            
         });
-
+       
+   
     }
 
 
@@ -264,13 +270,29 @@ $('#go').on("click", function(){
     function switchScreens() {
         EL_SCREEN.hide()
         $('#' + $(this).data('screen')).show();
+        
+       }
+       EL_SCREEN_LINK.on('click', switchScreens);
+       EL_SCREEN.slice(1).hide();
 
-
-    }
-    EL_SCREEN_LINK.on('click', switchScreens);
-    EL_SCREEN.slice(1).hide();
-
-
+ 
+     $(function() {
+    $("#myform").validate(
+      {
+        rules: 
+        {
+          guests: 
+          {
+            range:[1,4]
+          },
+          duration: 
+          {
+            range:[1,15]
+          }
+          
+        }
+      });	
+});
 
     init();
 });

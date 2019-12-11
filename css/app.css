@@ -223,6 +223,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.error {
+  color: #921b1b;
+}
+
+.error label {
+  font-family: 'Roboto', sans-serif;
+}
+
 .detail_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,6 +299,18 @@ textarea {
   textarea {
     background-color: white;
   }
+}
+
+.detail_info {
+  margin-top: 20px;
+}
+
+.detail_info1 {
+  margin-top: 20px;
+}
+
+.detail_info2 {
+  margin-top: 20px;
 }
 
 .nav {

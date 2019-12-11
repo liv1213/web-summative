@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+         
+    
 
 </head>
 
@@ -35,7 +38,7 @@
 
 
 
-        <div class="detail_container">
+        <form method="post" name="myform" id="myform"class="detail_container">
             <div class="detail_heading">
                 <p>FINE YOUR PERFECT STAY IN<br>NEW ZEALAND</p>
             </div>
@@ -43,22 +46,27 @@
 
             <div class="detail_info">
                 <label for="lname">WHERE</label><br>
-                <input type="text" id="user_input" name="location" placeholder="wellington">
+                <input type="text" id="user_input" name="location" placeholder="Wellington">
             </div>
             <div class="detail_info1">
                 <label for="cname">GUESTS</label><br>
-                <input type="number" id="user_input1" name="guests" placeholder="2 guests" max="4" min="1">
+                <input type="text" id="user_input1" name="guests" placeholder="2 guests" max="4" min="1">
+              
             </div>
             <div class="detail_info2">
                 <label for="dname">DURATION OF STAY</label><br>
-                <input type="number" id="user_input2" name="duration" placeholder="2 days" max="15" min="1">
+                <input type="text" id="user_input2" name="duration" placeholder="2 days" max="15" min="1">
+                
             </div>
             <div>
-                <a class="screen_link" id="go" data-screen="accomodation_page" href="#">
+                <a class="screen_link" id="go" data-screen="accomodation_page" href="#" >
                     <p>GO</p>
                 </a>
             </div>
-        </div>
+        </form>
+
+
+        
         <div class="nav_footer">
             <div class="footer_links">
                 <a href="#">ENGLISH</a>
@@ -78,7 +86,7 @@
 
         <div class="nav_bar">
             <div class="category_search">
-                <input id="searchBar" class="searchbar" placeholder="Search">
+                <input id="searchBar" class="searchbar" placeholder="Search" class="typeahead">
             </div>
 
 
@@ -156,8 +164,13 @@
         </div>
 
 
-
-
+<script>
+    function activatePlacesSearch(){
+        var input = document.getElementById('user_input');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+    }
+</script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUhpSu5rUgr-Rq7AWyfV6CFDyEyCqyAjA&libraries=places&callback=activatePlacesSearch"></script>
 </body>
 
 

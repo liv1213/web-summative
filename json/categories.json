@@ -19,11 +19,6 @@
             "id": 4,
             "slug": "hostel",
             "title": "Hostel"
-        },
-        {
-            "id": 5,
-            "slug": "all",
-            "title": "All"
         }
     ]
 }
