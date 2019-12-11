@@ -47,14 +47,14 @@
             </div>
             <div class="detail_info1">
                 <label for="cname">GUESTS</label><br>
-                <input type="number" id="user_input" name="guests" placeholder="2 guests" max="4" min="1">
+                <input type="number" id="user_input1" name="guests" placeholder="2 guests" max="4" min="1">
             </div>
             <div class="detail_info2">
                 <label for="dname">DURATION OF STAY</label><br>
-                <input type="number" id="user_input" name="duration" placeholder="2 days" max="15" min="1">
+                <input type="number" id="user_input2" name="duration" placeholder="2 days" max="15" min="1">
             </div>
             <div>
-                <a class="screen_link" data-screen="accomodation_page" href="#">
+                <a class="screen_link" id="go" data-screen="accomodation_page" href="#">
                     <p>GO</p>
                 </a>
             </div>
@@ -89,6 +89,26 @@
             </div>
 
         </div>
+
+<div class="input_accomodation">
+    <label id="input_msg"><p>available accomodation</p></label>
+    <p>available accomodation</p>
+</div>
+<div class="input_deatils">
+    <div>
+        <p>Number of guests</p>
+        <label id="input_msg1"></label>
+    </div>
+    <hr>
+    <div>
+        <p>Number of days</p>
+        <label id="input_msg2"></label>
+    </div>
+</div>
+<div class="input_edit">
+    <a href="#">EDIT</a>
+</div>
+
         <div class="category_search">
             <input id="searchBar" class="search_mobile" placeholder="Search">
         </div>

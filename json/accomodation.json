@@ -48,12 +48,11 @@
                     "foodText": "All day buffet"
                 }
             ],
+            "ratingTitle": "Ratings",
             "rating": [
                 {
                     "location": "Location",
-                    "stars":"/image/star.png",
-                    "stars2":"/image/star.png",
-                    "stars3":"/image/star.png"
+                    "stars":"/image/star.png"
                 },
                 {
                     "location": "Cleanliness",
@@ -75,6 +74,7 @@
             "price": "$157 NZD / night",
             "maxGuests": 2,
             "maxDays": 5
+            
         },
         {
             "id": 3,

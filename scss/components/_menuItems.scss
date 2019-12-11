@@ -1,5 +1,6 @@
 .menu_items{
     display: flex;
+    
 }
 
 .menu_items img {
@@ -12,5 +13,10 @@
 
 .menu_header h3 {
     font-family: 'Roboto', sans-serif;
+}
+
+.menu_header {
+    display: flex;
+    justify-content: center;
 }
 

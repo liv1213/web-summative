@@ -184,6 +184,15 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.menu_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .rating img {
   width: 40px;
   height: 45px;
@@ -193,9 +202,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .rating p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.rating_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rating_header h3 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -497,17 +521,13 @@ hr {
   width: 300px;
 }
 
-.info1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.detail_header {
+  margin: 30px 0px 30px 50px;
 }
 
-.info_text {
-  padding-right: 200px;
+.detail_header h3 {
+  color: #4d4c4c;
+  font-size: 30px;
 }
 
 .nav_footer {
@@ -540,5 +560,80 @@ hr {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 30px;
+}
+
+.detail_header {
+  margin: 30px 0px 30px 50px;
+}
+
+.detail_header h3 {
+  color: #4d4c4c;
+  font-size: 30px;
+}
+
+.input_accomodation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.input_accomodation p {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  font-size: 25px;
+}
+
+#input_msg {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+#input_msg1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+#input_msg2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.input_deatils p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.input_deatils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.input_edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.input_edit a {
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+}
+
+.input_edit a:hover {
+  color: black;
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,60 @@
+.input_accomodation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.input_accomodation p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    font-size: 25px;
+}
+
+#input_msg {
+    font-family: 'Roboto', sans-serif;  
+    font-size: 25px;
+    margin-right: 5px; 
+}
+
+#input_msg1 {
+    font-family: 'Roboto', sans-serif;   
+}
+
+#input_msg2 {
+    font-family: 'Roboto', sans-serif;   
+}
+
+
+.input_deatils p {
+    font-family: 'Roboto', sans-serif;   
+}
+
+.input_deatils {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.input_edit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.input_edit a {
+    font-family: 'Roboto', sans-serif; 
+  
+    color: rgb(102, 102, 102);
+  
+}
+
+
+.input_edit a:hover{
+    color: black;
+    cursor: pointer;
+    
+}

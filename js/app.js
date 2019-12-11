@@ -10,7 +10,13 @@ $(document).ready(function () {
         EL_SCREEN = $('.screen'),
         EL_CHOSEN_ITEM = $('.chosen_item'),
         EL_ACCOMODATION_CHOSEN = $('.acomodation_chosen')
-    EL_USER_INPUT = $('#user_input')
+    EL_USER_INPUT = $('#user_input'),
+    EL_USER_INPUT = $('#user_input1'),
+    EL_USER_INPUT = $('#user_input2'),
+    EL_INPUT_MSG = $('#input_msg'),
+    EL_INPUT_MSG = $('#input_msg1'),
+    EL_INPUT_MSG = $('#input_msg2'),
+    EL_GO = $('#go')
 
     let accomodationArr = [];
 
@@ -90,8 +96,9 @@ $(document).ready(function () {
         
         <div class="detail_header">
         <h3>${accomodation.mainTitle}</h3>
-        <hr>
+       
     </div>
+    <hr>
     <div class="detail_images">`
         $.each(accomodation.images, function (i, images) {
             chosenHtml += `  <img src= "${images.image1}">`
@@ -117,13 +124,18 @@ $(document).ready(function () {
 
 
         chosenHtml += `</div>
+
+
+        <div class="rating_header">
+        <h3>${accomodation.ratingTitle}</h3>
+       
+    </div>
         <div class="rating">`
         $.each(accomodation.rating, function (i, rating) {
             chosenHtml += `  <p>${rating.location}</p>
             
             <img src= "${rating.stars}">
-            <img src= "${rating.stars2}">
-            <img src= "${rating.stars3}">`
+           `
         })
 
 
@@ -214,29 +226,39 @@ $(document).ready(function () {
     }
 
 
+$('#go').on("click", function(){
+$('#input_msg').html($('#user_input').val());
+});
 
+$('#go').on("click", function(){
+    $('#input_msg1').html($('#user_input1').val());
+    });
+
+    $('#go').on("click", function(){
+        $('#input_msg2').html($('#user_input2').val());
+        });
 
 
 
     function addClickListeners() {
-        $('.screen_change').on("click", switchScreens)
-        //     let accomodationId = $(this).data('id')
-        //     let accomodation = getAccomodation(accomodationId);
+        $('.screen_change').on("click", function(){
+            let accomodationId = $(this).data('id')
+            let accomodation = getAccomodation(accomodationId);
 
-        // });
+        });
 
     }
 
 
-    // function getAccomodation(accomodationId) {
-    //     for (var i = 0; i < accomodationArr.length; i++) {
-    //         var id = accomodationArr[i].id;
-    //         if (id === accomodationId) {
-    //             return accomodationArr[i];
-    //         }
-    //     }
-    //     return null
-    // }
+    function getAccomodation(accomodationId) {
+        for (var i = 0; i < accomodationArr.length; i++) {
+            var id = accomodationArr[i].id;
+            if (id === accomodationId) {
+                return accomodationArr[i];
+            }
+        }
+        return null
+    }
 
 
     function switchScreens() {
