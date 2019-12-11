@@ -73,7 +73,60 @@
             "category": 1,
             "price": "$157 NZD / night",
             "maxGuests": 2,
-            "maxDays": 5
+            "maxDays": 5,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
             
         },
         {
@@ -85,7 +138,60 @@
             "category": 1,
             "price": "$157 NZD / night",
             "maxGuests": 2,
-            "maxDays": 5
+            "maxDays": 5,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
         },
         {
             "id": 4,
@@ -96,7 +202,60 @@
             "category": 2,
             "price": "$90 NZD / night",
             "maxGuests": 4,
-            "maxDays": 10
+            "maxDays": 10,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
         },
         {
             "id": 5,
@@ -107,7 +266,60 @@
             "category": 2,
             "price": "$90 NZD / night",
             "maxGuests": 4,
-            "maxDays": 10
+            "maxDays": 10,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
         },
         {
             "id": 6,
@@ -118,7 +330,60 @@
             "category": 2,
             "price": "$90 NZD / night",
             "maxGuests": 4,
-            "maxDays": 10
+            "maxDays": 10,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
         },
         {
             "id": 7,
@@ -129,7 +394,60 @@
             "category": 3,
             "price": "$240 NZD / night",
             "maxGuests": 4,
-            "maxDays": 15
+            "maxDays": 15,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
         },
         {
             "id": 8,
@@ -140,7 +458,60 @@
             "category": 3,
             "price": "$240 NZD / night",
             "maxGuests": 4,
-            "maxDays": 15
+            "maxDays": 15,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
         },
         {
             "id": 9,
@@ -151,7 +522,60 @@
             "category": 4,
             "price": "$30 NZD / night",
             "maxGuests": 1,
-            "maxDays": 10
+            "maxDays": 10,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
         },
         {
             "id": 10,
@@ -162,7 +586,60 @@
             "category": 4,
             "price": "$30 NZD / night",
             "maxGuests": 1,
-            "maxDays": 10
+            "maxDays": 10,
+            "mainTitle": "Plaza on the park, Wellington",
+            "images": [
+                {
+                    "image1": "/image/image9.png"
+                },
+                {
+                    "image1": "/image/image11.jpeg"
+                },
+                {
+                    "image1": "/image/hotel.jpeg"
+                },
+                {
+                    "image1": "/image/image13.png"
+                },
+                {
+                    "image1": "/image/image16.jpeg"
+                }
+            ],
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "foodTitle": "Food and beverage",
+            "food": [
+                {
+                    "icon": "/image/coffee-cup.png",
+                    "foodText": "tea and coffee"
+                },
+                {
+                    "icon": "/image/cutlery.png",
+                    "foodText": "Hotel resturant"
+                },
+                {
+                    "icon": "/image/meal.png",
+                    "foodText": "Room service"
+                },
+                {
+                    "icon": "/image/buffet.png",
+                    "foodText": "All day buffet"
+                }
+            ],
+            "ratingTitle": "Ratings",
+            "rating": [
+                {
+                    "location": "Location",
+                    "stars":"/image/star.png"
+                },
+                {
+                    "location": "Cleanliness",
+                    "stars": "/image/star.png"
+                },
+                {
+                    "location": "Service",
+                    "stars": "/image/star.png"
+                }
+            ]
         }
     ]
 }

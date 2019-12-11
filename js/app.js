@@ -109,6 +109,9 @@ $(document).ready(function () {
         chosenHtml += `</div>
       <div class="detail_information">
             <p>${accomodation.info}</p>
+            <div class="accomodation_price">
+            <p>${accomodation.price}</p>
+            </div>
         </div>
         
   
@@ -121,7 +124,7 @@ $(document).ready(function () {
         $.each(accomodation.food, function (i, food) {
             chosenHtml += `   <img src= "${food.icon}">
             <p>${food.foodText}</p>`
-        })
+        });
 
 
         chosenHtml += `</div>
@@ -281,15 +284,32 @@ $(document).ready(function () {
       {
         rules: 
         {
+            location: 
+            {
+              required: true,
+              
+            },
           guests: 
           {
-            range:[1,4]
+            required: true,
+            range:[1,4],
+            
           },
           duration: 
           {
+            required: true,
             range:[1,15]
+           
           }
+       
           
+        },
+        messages: 
+        {
+          location: 
+          {
+            required: "Please enter a location"
+          }
         }
       });	
 });
