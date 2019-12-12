@@ -135,19 +135,19 @@ $(document).ready(function () {
  <hr>
     <div class="detail_images">`
         $.each(accomodation.images, function (i, images) {
-            chosenHtml += ` <div> <img src= "${images.image1}">
+            chosenHtml += ` <div class="detail_img"> <img src= "${images.image1}">
             </div>`
         })
         chosenHtml += `</div>
 
  
-        <div class="detail_info">
+        <div class="detail_information">
       <div class="detail_text">
             <p>${accomodation.info}</p>
             </div>
             <div class="price">
             <p>${accomodation.price}</p>
-            <a class="book" href="#">
+            <a class="book" href="https://www.booking.com/hotel/nz/ibis-wellington.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaK4BiAEBmAEJuAEHyAEM2AEB6AEB-AELiAIBqAIDuALY0srvBcACAQ;sid=85389786f2507df49fa3eb98699ba440;all_sr_blocks=4375105_91457243_2_2_0;checkin=2019-12-26;checkout=2020-01-22;dest_id=-1521348;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=4375105_91457243_2_2_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1576184166;srpvid=b7ae933237200080;type=total;ucfs=1&">
             <p>BOOK</p>
         </a>
             </div>
@@ -163,21 +163,25 @@ $(document).ready(function () {
 
         <div class="menu_items">`
         $.each(accomodation.food, function (i, food) {
-            chosenHtml += `  <div> <img src= "${food.icon}"></div>
-            <div><p>${food.foodText}</p><div>`
+            chosenHtml += `  <div class="menu_info"> <img src= "${food.icon}">
+            <p>${food.foodText}</p>
+            </div>`
         });
         chosenHtml += `</div>
 
-
+   <hr>
         <div class="rating_header">
+     
         <h3>${accomodation.ratingTitle}</h3>
        
     </div>
         <div class="rating">`
         $.each(accomodation.rating, function (i, rating) {
-            chosenHtml += ` <div> <p>${rating.location}</p></div>
+            chosenHtml += ` <div class="rating_info"> <p>${rating.location}</p>
+           
             
-          <div>  <img src= "${rating.stars}"> </div>
+           <img src= "${rating.stars}"> 
+           </div>
         
       </div>
            `
@@ -185,7 +189,9 @@ $(document).ready(function () {
 
 
         chosenHtml += `</div>
-    
+        <a class="review_btn" href="#">
+        <p>VIEW REVIEWS</p>
+    </a>
     </div>
         </div>`
         return chosenHtml;
@@ -350,7 +356,7 @@ return  filteredDuration
     EL_SCREEN.slice(1).hide();
 
 
-    
+
 
     init();
 });

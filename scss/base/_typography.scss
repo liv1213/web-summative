@@ -2,17 +2,92 @@
 
     .detail_header h3 {
         font-family: 'Roboto', sans-serif;
+        font-size: 35px;
+        color: rgb(97, 95, 95);
+        margin-left: 30px;
+        @include mobile {
+            text-align: center;
+        }
     }
     
-    .detail_info p {
+    .detail_information p {
         font-family: 'Roboto', sans-serif;
+        @include mobile {
+            text-align: center;
+        }
     }
     .price p {
         font-family: 'Roboto', sans-serif;
+        font-size: 20px;
     }
 
-    .acomodation_chosen a {
-        font-family: 'Roboto', sans-serif;
+   
+}
+
+.detail_text p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.book p {
+    font-family: 'Roboto', sans-serif;
+   color: white;
+    background-color:  #9abc38;
+    padding: 5px 24px;
+    border-radius:5px ; 
+    margin-top: 100px;
+}
+
+.review_btn p {
+    font-family: 'Roboto', sans-serif;
+   color: white;
+    background-color:  #9abc38;
+    padding: 5px 24px;
+    border-radius:5px ; 
+    text-align: center;
+    margin: 0px 400px 100px 700px; 
+    @include mobile {
+        margin: 20px 30px 20px 30px;  
+    }
+}
+
+.review_btn {
+    text-decoration: none;
+}
+
+.book p:hover {
+    background-color: #71882d;
+    }
+
+    .review_btn p:hover {
+background-color: #71882d;
+}
+
+.book{
+    text-decoration: none;
+}
+
+
+.rating_header h3 {
+    font-family: 'Roboto', sans-serif; 
+}
+
+.rating_info p {
+    font-family: 'Roboto', sans-serif; 
+    
+    @include mobile {
+        margin-left: 30px;
+    }
+}
+
+.menu_header h3 {
+    font-family: 'Roboto', sans-serif;  
+}
+
+.menu_items p {
+    font-family: 'Roboto', sans-serif;   
+    margin-left: 50px;
+    @include mobile {
+        margin-left: 30px;
     }
 }
 

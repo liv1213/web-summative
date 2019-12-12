@@ -1,49 +1,50 @@
-.detail_header {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    color: rgb(82, 82, 82);
-  margin-left: 30px;
-}
-
-.image_display {
-    display: flex;
-}
-
-.image_display1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.image img{
-    width: 500px;
-}
-
-.image1 img{
-    width: 300px;
-}
-
-#image2 {
-    width: 315px;
-}
-#image3 {
-    width: 315px;
-}
-
-.image4 img {
-    width: 338px;
-}
 .detail_images {
     display: flex;
     margin-top: 50px;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+   
+}
+
+.detail_img img {
+width: 715px;
+@include mobile {
+    width: 365px;
+}
 }
 
 .detail_text {
-    display: flex;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-right: 200px;
+    margin-left: 30px;
+    @include mobile {
+        margin: 20px 20px 10px 20px;
+    }
+
 }
 
-.menu_header h3 {
-    font-family: 'Roboto', sans-serif;
+.detail_information {
+    display: flex;
+    margin-bottom: 50px;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.price {
+    margin-top: 40px;
+    margin-right: 100px;
+    border-style: solid;
+    padding: 0px 50px 0px 50px;
+    @include mobile {
+        margin: 40px 20px 10px 20px;
+    }
+
 }
 
 .menu_header {
@@ -51,73 +52,45 @@
     justify-content: center;
 }
 
-.menu_items1 {
-    display: flex;
-  
-}
-
-.menu_items2 {
-    display: flex;
-  
-}
-
-.menu_items3 {
-    display: flex;
-  
-}
-
-.menu_items4 {
-    display: flex;
-  
-}
-
-.menu_items img {
-    width: 50px;
-}
-
-
-.rating_header h3 {
-    font-family: 'Roboto', sans-serif;
-}
-
-
 .rating_header {
     display: flex;
     justify-content: center;
 }
 
-.rating1{
-    display: flex;
+.rating_info img {
+    width: 50px; 
+    margin-left: 50px;
+    @include mobile {
+        margin-left: 30px;
+    }
+   
 }
-
-.rating2{
-    display: flex;
-}
-
-.rating3{
-    display: flex;
-}
-
-.rating p {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 8px;
-}
-
-.rating img {
-    width: 30px;
-    height: 30px;
-}
-
-
-.menu_items p {
-    font-family: 'Roboto', sans-serif; 
-}
-
 .rating {
     display: flex;
+    @include mobile {
+        display: flex;
+        justify-content: center;
+    }
 }
 
+.menu_items img{
+    width: 50px;
+}
 
-.detail_images img {
-    width: 300px;
+.rating_info {
+    display: flex;
+    @include mobile {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+.menu_info {
+    display: flex;
+    @include mobile {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
 }
