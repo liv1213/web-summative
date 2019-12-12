@@ -22,7 +22,15 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.acomodation_chosen .detail_information p {
+.acomodation_chosen .detail_info p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.acomodation_chosen .price p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.acomodation_chosen .acomodation_chosen a {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -70,6 +78,7 @@
   color: white;
   font-size: 30px;
   margin: 0px;
+  margin: 25px 0px 0px 10px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -81,8 +90,8 @@
 }
 
 .nav_links {
-  padding-left: 900px;
-  padding-top: 20px;
+  padding-left: 800px;
+  padding-top: 30px;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
@@ -164,36 +173,6 @@
   padding: 10px 30px;
   font-family: 'Roboto', sans-serif;
   color: #4e4d4d;
-}
-
-.rating img {
-  width: 40px;
-  height: 45px;
-}
-
-.rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.rating p {
-  font-family: 'Roboto', sans-serif;
-}
-
-.rating_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.rating_header h3 {
-  font-family: 'Roboto', sans-serif;
 }
 
 .error {
@@ -314,6 +293,14 @@ textarea {
 .nav a:hover {
   color: #3d3c3c;
   cursor: pointer;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo {
+  margin: 20px 0px 0px 20px;
 }
 
 #home {
@@ -504,31 +491,6 @@ hr {
   }
 }
 
-.detail_images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.detail_images img {
-  width: 300px;
-}
-
-.detail_header {
-  margin: 30px 0px 30px 50px;
-}
-
-.detail_header h3 {
-  color: #4d4c4c;
-  font-size: 30px;
-}
-
-.detail_information {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .nav_footer {
   background-color: #9abc38;
 }
@@ -559,21 +521,6 @@ hr {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 30px;
-}
-
-.detail_header {
-  margin: 30px 0px 30px 50px;
-}
-
-.detail_header h3 {
-  color: #4d4c4c;
-  font-size: 30px;
-}
-
-.detail_information {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .input_accomodation {
@@ -642,18 +589,61 @@ hr {
   cursor: pointer;
 }
 
-.menu_items {
+.detail_header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #525252;
+  margin-left: 30px;
+}
+
+.image_display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.menu_items img {
-  width: 100px;
+.image_display1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.menu_items p {
-  font-family: 'Roboto', sans-serif;
+.image img {
+  width: 500px;
+}
+
+.image1 img {
+  width: 300px;
+}
+
+#image2 {
+  width: 315px;
+}
+
+#image3 {
+  width: 315px;
+}
+
+.image4 img {
+  width: 338px;
+}
+
+.detail_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.detail_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
 }
 
 .menu_header h3 {
@@ -667,5 +657,84 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menu_items1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_items2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_items3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_items4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_items img {
+  width: 50px;
+}
+
+.rating_header h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.rating_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rating1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating p {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 8px;
+}
+
+.rating img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu_items p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=app.css.map */

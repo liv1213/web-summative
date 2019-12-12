@@ -1,7 +1,7 @@
 
 
 $(document).ready(function () {
-    
+
 
     EL_ACCOMODATION_LIST = $('.accomodation_list'),
         EL_SEARCH_BOX = $('#searchBar'),
@@ -11,7 +11,7 @@ $(document).ready(function () {
         EL_SCREEN = $('.screen'),
         EL_CHOSEN_ITEM = $('.chosen_item'),
         EL_ACCOMODATION_CHOSEN = $('.acomodation_chosen')
-        EL_USER_INPUT = $('#user_input'),
+    EL_USER_INPUT = $('#user_input'),
         EL_USER_INPUT = $('#user_input1'),
         EL_USER_INPUT = $('#user_input2'),
         EL_INPUT_MSG = $('#input_msg'),
@@ -22,7 +22,40 @@ $(document).ready(function () {
 
     let accomodationArr = [];
 
+    $(function () {
+        $("#myform").validate(
+            {
+                rules:
+                {
+                    location:
+                    {
+                        required: true,
 
+                    },
+                    guests:
+                    {
+                        required: true,
+                        range: [1, 4],
+
+                    },
+                    duration:
+                    {
+                        required: true,
+                        range: [1, 15]
+
+                    }
+
+
+                },
+                messages:
+                {
+                    location:
+                    {
+                        required: "Please enter a location"
+                    }
+                }
+            });
+    });
 
 
 
@@ -62,7 +95,7 @@ $(document).ready(function () {
         });
         EL_ACCOMODATION_LIST.html(string);
         addClickListeners()
-        let  EL_SCREEN_CHANGE = $('.screen_change')
+        let EL_SCREEN_CHANGE = $('.screen_change')
         EL_SCREEN_CHANGE.on('click', switchScreens);
     }
 
@@ -83,9 +116,9 @@ $(document).ready(function () {
 
     function displayChosenAccomodation(accomodation) {
         let string = accomodationChosenHtml(accomodation);;
-         
-            
-        
+
+
+
         EL_ACCOMODATION_CHOSEN.html(string);
 
     }
@@ -93,40 +126,46 @@ $(document).ready(function () {
 
     function accomodationChosenHtml(accomodation) {
         var chosenHtml =
-            `<div class="acomodation_chosen" data-id='${accomodation.id}'>
+           `<div class="acomodation_chosen" data-id='${accomodation.id}'>
         
         <div class="detail_header">
         <h3>${accomodation.mainTitle}</h3>
-       
-    </div>
-    <hr>
+        </div>
+
+ <hr>
     <div class="detail_images">`
         $.each(accomodation.images, function (i, images) {
-            chosenHtml += `  <img src= "${images.image1}">`
+            chosenHtml += ` <div> <img src= "${images.image1}">
+            </div>`
         })
-
-
         chosenHtml += `</div>
-      <div class="detail_information">
+
+ 
+        <div class="detail_info">
+      <div class="detail_text">
             <p>${accomodation.info}</p>
-            <div class="accomodation_price">
+            </div>
+            <div class="price">
             <p>${accomodation.price}</p>
+            <a class="book" href="#">
+            <p>BOOK</p>
+        </a>
             </div>
         </div>
         
+        <hr>
   
    
     <div class="menu_header">
         <h3>${accomodation.foodTitle}</h3>
         </div>
 
+
         <div class="menu_items">`
         $.each(accomodation.food, function (i, food) {
-            chosenHtml += `   <img src= "${food.icon}">
-            <p>${food.foodText}</p>`
+            chosenHtml += `  <div> <img src= "${food.icon}"></div>
+            <div><p>${food.foodText}</p><div>`
         });
-
-
         chosenHtml += `</div>
 
 
@@ -136,16 +175,17 @@ $(document).ready(function () {
     </div>
         <div class="rating">`
         $.each(accomodation.rating, function (i, rating) {
-            chosenHtml += `  <p>${rating.location}</p>
+            chosenHtml += ` <div> <p>${rating.location}</p></div>
             
-            <img src= "${rating.stars}">
+          <div>  <img src= "${rating.stars}"> </div>
+        
+      </div>
            `
         })
 
 
         chosenHtml += `</div>
-       
-
+    
     </div>
         </div>`
         return chosenHtml;
@@ -187,6 +227,10 @@ $(document).ready(function () {
     }
 
 
+    
+
+
+
     function categoryItemHtml(category) {
         return `<div class="category_item" data-category="${category.id}">
         
@@ -196,7 +240,34 @@ $(document).ready(function () {
     }
 
 
+function filterResults() {
+   let results = filteredByGuests(accomodationArr)
+   results = filteredByDuration(results)
+   displayAccomodation(results)
 
+}
+
+function filteredByGuests(accomodationArr) {
+let filteredGuests = [];
+let maxGuests = $('#user_input1').val()
+$.each(accomodationArr, function(i, accomodation){
+if (maxGuests <= accomodation.maxGuests){
+    filteredGuests.push(accomodation)
+}
+});
+return filteredGuests
+}
+
+function filteredByDuration(results){
+let filteredDuration = [];
+let maxDays = $('#user_input2').val()
+$.each(results, function(i, accomodation){
+    if (maxDays  <= accomodation.maxDays){
+        filteredDuration.push(accomodation)
+    }
+});
+return  filteredDuration
+}
 
 
 
@@ -252,10 +323,10 @@ $(document).ready(function () {
             let accomodationId = $(this).data('id')
             let accomodation = getAccomodation(accomodationId);
             displayChosenAccomodation(accomodation);
-            
+
         });
-       
-   
+
+
     }
 
 
@@ -273,46 +344,13 @@ $(document).ready(function () {
     function switchScreens() {
         EL_SCREEN.hide()
         $('#' + $(this).data('screen')).show();
-        
-       }
-       EL_SCREEN_LINK.on('click', switchScreens);
-       EL_SCREEN.slice(1).hide();
+        filterResults()
+    }
+    EL_SCREEN_LINK.on('click', switchScreens);
+    EL_SCREEN.slice(1).hide();
 
- 
-     $(function() {
-    $("#myform").validate(
-      {
-        rules: 
-        {
-            location: 
-            {
-              required: true,
-              
-            },
-          guests: 
-          {
-            required: true,
-            range:[1,4],
-            
-          },
-          duration: 
-          {
-            required: true,
-            range:[1,15]
-           
-          }
-       
-          
-        },
-        messages: 
-        {
-          location: 
-          {
-            required: "Please enter a location"
-          }
-        }
-      });	
-});
+
+    
 
     init();
 });

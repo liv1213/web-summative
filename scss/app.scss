@@ -9,7 +9,7 @@
 //components
 @import './components/buttons';
 @import './components/filters';
-@import './components/rating';
+
 @import './components/validationErrors';
 
 
@@ -20,12 +20,12 @@
 @import './layout/hero';
 @import './layout/accomodation';
 @import './layout/nav_bar';
-@import './layout/imageLayout';
-@import './layout/details';
+
+
 @import './layout/navFooter';
-@import './layout/details';
+
 @import './layout/inputDetails';
-@import './layout/menuItems';
+
 
 
 
@@ -33,3 +33,6 @@
 
 
 // vendors 
+
+//pages
+@import './pages/finalpage';

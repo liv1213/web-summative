@@ -4,7 +4,14 @@
         font-family: 'Roboto', sans-serif;
     }
     
-    .detail_information p {
+    .detail_info p {
+        font-family: 'Roboto', sans-serif;
+    }
+    .price p {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .acomodation_chosen a {
         font-family: 'Roboto', sans-serif;
     }
 }
@@ -65,6 +72,7 @@
     color: white;
     font-size: 30px;
     margin: 0px;
+    margin: 25px 0px 0px 10px;
     font-family: 'Roboto', sans-serif;
 
     @include mobile {
@@ -75,8 +83,8 @@
 
 
 .nav_links {
-    padding-left: 900px;
-    padding-top: 20px;
+    padding-left: 800px;
+    padding-top: 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 
