@@ -4,6 +4,9 @@
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
+    @include mobile {
+        padding-bottom: 50px;
+    }
 }
 
 
@@ -73,3 +76,16 @@
     }
 }
 
+.logo1 img {
+    position: absolute;
+    padding: 20px 0px 0px 20px;
+    @include mobile {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px 0px 150px;
+    }
+}
+
+.logo1 img  {
+    width: 50px;
+}

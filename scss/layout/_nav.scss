@@ -4,6 +4,8 @@
     @include mobile {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        padding-top: 20px;
     }
 }
 
@@ -17,6 +19,7 @@
     margin: 0px;
     text-decoration: none;
     padding: 0px 30px;
+   
 }
 
 .nav a:hover {
@@ -31,4 +34,7 @@
 
 .logo {
     margin: 20px 0px 0px 20px;
+    @include mobile {
+        margin: 0px 0px 0px 150px;
+    }
 }

@@ -84,7 +84,7 @@
 
 @media (max-width: 420px) {
   .nav p {
-    margin-top: 100px;
+    margin: 0px 0px 0px 90px;
     font-size: 40px;
   }
 }
@@ -114,7 +114,7 @@
 
 @media (max-width: 420px) {
   .screen_link p {
-    margin: 60px 100px 0px 100px;
+    margin: 30px 100px 0px 100px;
   }
 }
 
@@ -279,6 +279,11 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
   }
 }
 
@@ -301,6 +306,12 @@ textarea {
 
 .logo {
   margin: 20px 0px 0px 20px;
+}
+
+@media (max-width: 420px) {
+  .logo {
+    margin: 0px 0px 0px 150px;
+  }
 }
 
 #home {
@@ -405,12 +416,6 @@ hr {
   margin: 8px 30px 8px 30px;
 }
 
-@media (max-width: 420px) {
-  hr {
-    display: none;
-  }
-}
-
 .nav_bar {
   background-color: #9abc38;
   margin: 0px;
@@ -419,6 +424,12 @@ hr {
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+@media (max-width: 420px) {
+  .nav_bar {
+    padding-bottom: 50px;
+  }
 }
 
 .nav_bar a:hover {
@@ -491,6 +502,27 @@ hr {
   }
 }
 
+.logo1 img {
+  position: absolute;
+  padding: 20px 0px 0px 20px;
+}
+
+@media (max-width: 420px) {
+  .logo1 img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0px 0px 150px;
+  }
+}
+
+.logo1 img {
+  width: 50px;
+}
+
 .nav_footer {
   background-color: #9abc38;
 }
@@ -534,6 +566,18 @@ hr {
   margin-top: 30px;
 }
 
+@media (max-width: 420px) {
+  .input_accomodation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .input_accomodation p {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
@@ -544,6 +588,12 @@ hr {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   margin-right: 5px;
+}
+
+@media (max-width: 420px) {
+  #input_msg {
+    padding-bottom: 10px;
+  }
 }
 
 #input_msg1 {
@@ -736,5 +786,9 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.detail_images img {
+  width: 300px;
 }
 /*# sourceMappingURL=app.css.map */
